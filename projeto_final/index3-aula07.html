@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Template do site">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        rel="stylesheet" >
+    -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+        rel="stylesheet" >
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+
+        /**
+        body {
+            padding: 20px;
+        }
+        **/
+
+
+        header {
+            border-bottom: solid 3px black;
+            margin-bottom: 10px;
+        }
+        /** **/
+
+        /**
+        footer {
+            border-top: solid 3px black;
+            margin-top: 10px;
+        }
+        **/
+
+        .caixa {
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Cabecalho da Página -->
+    <header class="bg-secondary text-black">
+        <!-- Container -->
+        <div class="container pt-3">
+            <!-- 1a Linha -->
+            <div class="row">
+                <!-- 1a coluna -->
+                <div class="col-md-2">
+                    <p>Logo</p>
+                </div>
+                
+                <!-- 2a coluna -->
+                <div class="col-md-7">
+                    <p>Campo de busca</p>
+                </div>
+                
+                <!-- 3a coluna -->
+                <div class="col-md-3">
+                    <p>icones</p>
+                </div>   
+            </div>
+        </div>
+    </header>
+    <!-- Fim: Cabecalho da Página -->
+
+    <!-- Area principal -->
+    <main>
+        <div class="container">
+            <div class="row">
+            </div>
+
+            <div class="col-md-2">
+            </div>
+            <h4>Formulário de Cadastro</h4>
+            <div class="col-md-10 text center">
+                <form method="post" id="form-cadastro"
+                class="needs-validation">
+
+                <div class="row g-3 mb-4">
+
+                    <!--Nome completo-->
+                    <div class="col-md-6">
+                        <label for="nome" class="form-label"> Nome Completo</label>
+
+                        <input type="text" class="form-control" id="nome"
+                        name="nome" placeholder="Seu nome completo" required>    
+                    </div>
+
+                    <!--E-mail-->
+
+                    <div class="col-md-6">
+                        <label for="email" class="form-label"> E-mail</label>
+
+                        <input type="email" class="form-control" id="email"
+                        name="email" placeholder="exemplo@email.com" required>    
+                    </div>
+
+                    <!--Telefone-->
+
+                    <div class="col-md-6">
+                        <label for="telefone" class="form-label"> Telefone</label>
+
+                        <input type="tel" class="form-control" id="telefone"
+                        name="telefone" placeholder="ex: 24992685226" required>    
+                    </div>
+
+                    <!--Data de nascimento-->
+
+                    <div class="col-md-6">
+                        <label for="date" class="form-label"> Data de nascimento</label>
+
+                        <input type="date" class="form-control" id="nascimento"
+                        name="nascimento" placeholder="" required>  
+                        
+                    </div>
+
+                    <!--Senha-->
+                    <div class="col-md-6">
+                        <label for="senha" class="form-label"> Senha</label>
+
+                        <input type="password" class="form-control" id="senha"
+                        name="senha" placeholder="Digite sua senha" required minlength="6">    
+                    </div>
+
+                    <!--Senha confirmar-->
+                    <div class="col-md-6">
+                        <label for="senha" class="form-label"> Confirmar Senha</label>
+
+                        <input type="password" class="form-control" id="senha"
+                        name="senha" placeholder="Confirme sua senha" required minlength="6">    
+                    </div>
+
+                    <div class="col-12"></div>
+
+                    <h5> Selecione seu Gênero:</h5>
+
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoMasculino" value="masculino" chevked>
+                    <label class="form-check-label" for="generoMasculino">Masculino</label>
+                    </div>
+
+
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoFeminino" value="feminino" chevked>
+                    <label class="form-check-label" for="generoFeminino">Feminino</label>
+                    </div>
+
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoOutro" value="outro" chevked>
+                    <label class="form-check-label" for="generoOutro">Outro</label>
+                    </div>
+
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero"
+                        id="generoNaoinformar" value="naoinformar" chevked>
+                    <label class="form-check-label" for="generoNaoinformar">Não informar</label>
+                    </div>
+                    
+                    <form>
+                        <div>
+                                <input type="checkbox" id="aceite" required>
+                                <label for="aceite">Li e aceito os termos.</label>
+                        </div>
+                    </form>
+
+                    <!--  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 250px;">
+                        <button style="padding: 12px; border: none; border-radius: 8px; background-color: green; color: white; cursor: pointer;">Cadastrar</button>
+                        <button style="padding: 12px; border: none; border-radius: 8px; background-color: red; color: white; cursor: pointer;">Cancelar</button>
+                    </div> -->
+
+                    <!-- <input type="button" value="Salvar">
+                    <button type="submit" value="Enviar">Enviar</button>
+                    <button type="reset" value="Limpar">Limpar</button> -->
+
+                    <!---->
+                    
+                </div>
+                    
+                </form>
+                
+            </div>
+        </div>
+       
+    </main>
+    <!-- Fim: Area principal -->
+
+    <!-- Roda pe da pagina -->
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-auto">
+        <!-- Div Container -->
+        <div class="container py-4">
+            <!-- Div Linha -->
+            <div class="row">
+
+                <!-- Coluna - Links Rápidos -->
+                <div class="col-md-2  mb-3">
+                    <p>Links Rápidos</p>
+                    <nav class="nav flex-column">
+                        <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
+                        <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
+                        <a class="nav-link text-white py-1" href="ajuda.html">Ajuda</a>
+                        <a class="nav-link text-white py-1" href="perfil.html">Meu Perfil</a>
+                        <a class="nav-link text-white py-1" href="blog.html">Blog</a>                        
+                    </nav>
+                </div>
+
+                <!-- Coluna - Contatos -->
+                <div class="col-md-2">
+                    <p>Contatos</p>
+                    <p><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</p>
+                    <p><i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:contato@tenis.github.io" class="text-white">
+                            contato@tenis.github.io
+                        </a>
+                    </p>
+                    <p>
+                        <a href="suporte.html" class="text-white">
+                            Acesse o suporte
+                        </a> 
+                    </p>
+                </div>
+                
+                <!-- Outras colunas do rodapé (opcional) -->
+                <div class="col-md-8">
+                    <p class="text-end mb-0"></p>
+                </div>
+
+            </div>
+            <!-- Div Linha -->
+
+            <hr/>
+
+            <div class="row">
+                <!-- Coluna - Idioma -->
+                <div class="col-md-2  mb-3">
+
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select idioma">
+                        <option value="Portuges" selected>Portugues</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Russian">Russian</option>
+                    </select>
+                
+                </div>
+                <!-- Coluna - Idioma -->
+
+
+                <!-- Coluna - Moeda -->
+                <div class="col-md-1  mb-3">                
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select moeda">
+                        <option value="Real" selected>Real</option>
+                        <option value="US Dollars">US Dollars</option>
+                        <option value="Euro">Euro</option>
+                    </select>    
+                </div>
+                 <!-- Coluna - Moeda -->
+
+                <!-- Coluna - Links Rápidos -->
+                <div class="col-md-9  mb-3">
+                    <p class="text-end text-black-50 mb-0">
+                        <a href="termos.html" class="text-white">Termos e condições</a> |
+                        <a href="privacidade.html" class="text-white">Privacidade</a> |
+                        <span class="text-white">© 2025 SENAC - RJ</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Div Container -->
+    </footer>
+    <!-- Footer -->
+    <!-- Fim: Roda pe da pagina -->
+
+   
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a Loja</title>
+    <meta name="description" content="Sobre a nossa loja de celulares">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            padding: 20px;
+            background: rgb(207, 205, 205);
+        }
+
+        header {
+            border-bottom: solid 1px rgb(0, 0, 0);
+            margin-bottom: 10px;
+            background: #000000;
+            color: #b3b3b3;
+        }
+
+        main {
+            background: rgb(31, 31, 31);
+            min-height: 80vh;
+        }
+
+        .action-btn {
+            width: 36px;
+            height: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(241, 241, 241, 0.2);
+            border-radius: 6px;
+            background: transparent;
+            color: #e8e8e8;
+            cursor: pointer;
+        }
+
+        h1, h2 {
+            color: #000;
+        }
+
+        .sobre-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .sobre-content p {
+            margin-bottom: 15px;
+        }
+
+        .sobre-content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sobre-content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .sobre-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecalho da Página -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <a href="#" class="logo">
+                <img src="Imagens/logolojacll.jpg" alt="Logo">
+            </a>
+
+            <div class="flex-grow-1 mx-3">
+                <input type="search" class="form-control" placeholder="Buscar..." aria-label="Busca">
+            </div>
+
+            <div class="d-flex gap-2">
+                <button class="action-btn" title="Minha conta"><i class="bi bi-person"></i></button>
+                <button class="action-btn" title="Favoritos"><i class="bi bi-heart"></i></button>
+                <button class="action-btn" title="Carrinho"><i class="bi bi-bag"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- Fim: Cabecalho da Página -->
+
+    <!-- Area principal -->
+    <main>
+        <div class="container my-4">
+            <h1 class="text-center mb-4" style="color: #ffffff;">Sobre Nossa Loja</h1>
+
+            <div class="sobre-content">
+                <img src="Imagens/loja-celulares.jpg" alt="Loja de Celulares">
+
+                <section class="mb-4">
+                    <h2>Nossa História</h2>
+                    <p>Fundada em 2015, nossa loja de celulares nasceu com o objetivo de oferecer tecnologia de ponta com excelente atendimento e preços competitivos. Ao longo dos anos, conquistamos a confiança de milhares de clientes em todo o Brasil.</p>
+                </section>
+
+                <section class="mb-4">
+                    <h2>Missão</h2>
+                    <p>Proporcionar aos nossos clientes uma experiência de compra confiável, com produtos de qualidade, inovação tecnológica e atendimento personalizado.</p>
+                </section>
+
+                <section class="mb-4">
+                    <h2>Visão</h2>
+                    <p>Ser referência nacional em vendas de celulares e acessórios, reconhecida pela excelência no atendimento e pela variedade de produtos.</p>
+                </section>
+
+                <section class="mb-4">
+                    <h2>Valores</h2>
+                    <ul>
+                        <li>Qualidade e autenticidade dos produtos</li>
+                        <li>Transparência e ética em todas as operações</li>
+                        <li>Compromisso com a satisfação do cliente</li>
+                        <li>Inovação e atualização tecnológica constante</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>Contato</h2>
+                    <p>Para dúvidas, suporte ou sugestões, entre em contato com nossa equipe através do e-mail: 
+                        <a href="mailto:contato@tenis.github.io">contato@tenis.github.io</a> ou pelo telefone +55 (24) 2233-4455.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- Fim: Area principal -->
+
+    <!-- Roda pe da pagina -->
+    <footer class="bg-dark text-white mt-auto">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-2  mb-3">
+                    <p>Links Rápidos</p>
+                    <nav class="nav flex-column">
+                        <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
+                        <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
+                        <a class="nav-link text-white py-1" href="ajuda.html">Ajuda</a>
+                        <a class="nav-link text-white py-1" href="perfil.html">Meu Perfil</a>
+                        <a class="nav-link text-white py-1" href="blog.html">Blog</a>                        
+                    </nav>
+                </div>
+
+                <div class="col-md-2">
+                    <p>Contatos</p>
+                    <p><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</p>
+                    <p><i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:contato@tenis.github.io" class="text-white">
+                            contato@tenis.github.io
+                        </a>
+                    </p>
+                    <p>
+                        <a href="suporte.html" class="text-white">Acesse o suporte</a> 
+                    </p>
+                </div>
+
+                <div class="col-md-8">
+                    <p class="text-end mb-0"></p>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="row">
+                <div class="col-md-2  mb-3">
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select idioma">
+                        <option value="Portuges" selected>Portugues</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Russian">Russian</option>
+                    </select>
+                </div>
+
+                <div class="col-md-1  mb-3">                
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select moeda">
+                        <option value="Real" selected>Real</option>
+                        <option value="US Dollars">US Dollars</option>
+                        <option value="Euro">Euro</option>
+                    </select>    
+                </div>
+
+                <div class="col-md-9  mb-3">
+                    <p class="text-end text-black-50 mb-0">
+                        <a href="termos.html" class="text-white">Termos e condições</a> |
+                        <a href="privacidade.html" class="text-white">Privacidade</a> |
+                        <span class="text-white">© 2025 SENAC - RJ</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim: Roda pe da pagina -->
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
