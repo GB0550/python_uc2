@@ -65,23 +65,35 @@
   <header>
     <div class="container d-flex justify-content-between align-items-center py-2">
       <!-- Logo -->
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <img src="Imagens/logolojacll.jpg" alt="Logo">
       </a>
-
+  
       <!-- Barra de busca -->
       <div class="flex-grow-1 mx-3">
         <input type="search" class="form-control" placeholder="Buscar..." aria-label="Busca">
       </div>
-
+  
       <!-- Ícones -->
       <div class="d-flex gap-2">
-        <button class="action-btn" title="Minha conta"><i class="bi bi-person"></i></button>
-        <button class="action-btn" title="Favoritos"><i class="bi bi-heart"></i></button>
-        <button class="action-btn" title="Carrinho"><i class="bi bi-bag"></i></button>
+        <!-- Minha conta -->
+        <a href="perfil.html" class="btn btn-light" title="Minha conta">
+          <i class="bi bi-person"></i>
+        </a>
+  
+        <!-- Favoritos -->
+        <a href="produtos.html" class="btn btn-light" title="Produtos">
+          <i class="bi bi-bag"></i>
+        </a>
+  
+        <!-- Carrinho -->
+        <a href="carrinho.html" class="btn btn-light" title="Carrinho">
+          <i class="bi bi-cart2"></i>
+        </a>
       </div>
     </div>
   </header>
+  
 
   <!-- Introdução -->
   <section class="intro">
@@ -110,8 +122,8 @@
         <div class="card shadow-sm">
           <img src="Imagens/s25.jpg" class="card-img-top" alt="Produto 1">
           <div class="card-body">
-            <h5 class="card-title">Produto 1</h5>
-            <p class="card-text">Descrição rápida do produto.</p>
+            <h5 class="card-title">S25 Ultra</h5>
+            <p class="card-text">Feito pela Sansung</p>
             <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
@@ -121,8 +133,8 @@
         <div class="card shadow-sm">
           <img src="Imagens/iphone16promax.jpg" class="card-img-top" alt="Produto 2">
           <div class="card-body">
-            <h5 class="card-title">Produto 2</h5>
-            <p class="card-text">Descrição rápida do produto.</p>
+            <h5 class="card-title">Iphone 16 PRO MAX</h5>
+            <p class="card-text">Feito pela aplle.</p>
             <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
@@ -132,8 +144,8 @@
         <div class="card shadow-sm">
           <img src="Imagens/iphone16.jpg" class="card-img-top" alt="Produto 3">
           <div class="card-body">
-            <h5 class="card-title">Produto 3</h5>
-            <p class="card-text">Descrição rápida do produto.</p>
+            <h5 class="card-title">Iphone 16</h5>
+            <p class="card-text">Feito pela aplle.</p>
             <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
@@ -142,7 +154,7 @@
 
     <!-- Botão Ver Mais -->
     <div class="text-center mt-4">
-      <a href="catalogo.html" class="btn btn-dark btn-lg">Ver Mais</a>
+      <a href="produtos.html" class="btn btn-dark btn-lg">Ver Mais</a>
     </div>
   </main>
 
@@ -156,8 +168,8 @@
           <nav class="nav flex-column">
             <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
             <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
-            <a class="nav-link text-white py-1" href="ajuda.html">Ajuda</a>
-            <a class="nav-link text-white py-1" href="perfil.html">Meu Perfil</a>
+            <a class="nav-link text-white py-1" href="privacidade.html">Privacidade</a>
+            <a class="nav-link text-white py-1" href="termos.html">Termos e Condições</a>
             <a class="nav-link text-white py-1" href="blog.html">Blog</a>
           </nav>
         </div>
@@ -228,6 +240,7 @@
       </div>
     </div>
   </footer>
+  
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

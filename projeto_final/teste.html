@@ -1,192 +1,248 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo da Loja</title>
-  <meta name="description" content="Catálogo de produtos da loja">
+  <title>Página Inicial - Loja CLL</title>
+  <meta name="description" content="Página inicial da Loja CLL">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
 
+  <!-- Estilos personalizados -->
   <style>
     header {
       border-bottom: solid 3px black;
       margin-bottom: 10px;
     }
 
+    .logo img {
+      max-height: 60px; /* diminui o tamanho da logo */
+      width: auto;
+    }
+
+    /* Hero menor */
+    .hero {
+      background: url("Imagens/banner.jpg") center/cover no-repeat;
+      color: rgb(255, 255, 255);
+      padding: 50px 20px; /* diminuído */
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
     .card img {
-      height: 180px; /* diminui o tamanho da imagem */
+      height: 180px;
       object-fit: cover;
     }
 
-    footer {
-      margin-top: 40px;
+    .intro {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 40px 0;
     }
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="bg-secondary text-black">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-      <a href="#" class="logo">
-        <img src="Imagens/logolojacll.jpg" alt="Logo" height="50">
-      </a>
-      <div class="flex-grow-1 mx-3">
-        <input type="search" class="form-control" placeholder="Buscar..." aria-label="Busca">
+  <!-- Cabeçalho -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="d-flex gap-2">
+          <a href="index.html" class="logo">
+            <img src="Imagens/logolojacll.jpg" alt="Logo">
+          </a>
+          <!-- Minha conta -->
+          <a href="perfil.html" class="btn btn-light" title="Minha conta">
+            <i class="bi bi-person"></i>
+          </a>
+    
+          <!-- Favoritos -->
+          <a href="produtos.html" class="btn btn-light" title="Produtos">
+            <i class="bi bi-bag"></i>
+          </a>
+    
+          <!-- Carrinho -->
+          <a href="carrinho.html" class="btn btn-light" title="Carrinho">
+            <i class="bi bi-cart2"></i>
+          </a>
+        </div>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-      <div class="d-flex gap-2">
-        <button class="btn btn-light" title="Minha conta"><i class="bi bi-person"></i></button>
-        <button class="btn btn-light" title="Favoritos"><i class="bi bi-heart"></i></button>
-        <button class="btn btn-light" title="Carrinho"><i class="bi bi-bag"></i></button>
-      </div>
-    </div>
+    </nav>
   </header>
+  
 
-  <!-- Main -->
-  <main class="container my-4">
-    <h1 class="text-center mb-4">Catálogo da Loja</h1>
+  <!-- Introdução -->
+  <section class="intro">
+    <div class="container">
+      <h2>Sobre a Loja CLL</h2>
+      <p>
+        A Loja CLL nasceu com o objetivo de oferecer aos clientes uma experiência única de compra online, 
+        unindo qualidade, variedade e preços acessíveis. Trabalhamos com os melhores fornecedores e 
+        garantimos que cada produto atenda às expectativas de nossos clientes.
+      </p>
+      <p>
+        Nosso compromisso é trazer inovação e confiança, sempre com um atendimento rápido e dedicado. 
+        Aqui você encontra desde lançamentos tecnológicos até produtos indispensáveis para o dia a dia.
+      </p>
+      <!-- Botão agora vem depois do texto -->
+      <a href="sobre.html" class="btn btn-dark btn-lg mt-3">Ver Mais</a>
+    </div>
+  </section>
 
-    <div class="row g-4">
-      <!-- Produto 1 -->
-      <div class="col-md-3 col-sm-6">
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <h2 class="mb-4 text-center">Destaques</h2>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-3">
         <div class="card shadow-sm">
-          <img src="Imagens/xiaomi15.jpg" class="card-img-top" alt="Xiaomi 15 PRO">
+          <img src="Imagens/s25.jpg" class="card-img-top" alt="Produto 1">
           <div class="card-body">
-            <h5 class="card-title">Xiaomi 15 PRO</h5>
-            <p class="fw-bold text-success">R$ 4.000,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
+            <h5 class="card-title">S25 Ultra</h5>
+            <p class="card-text">Feito pela Sansung</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
       </div>
-
-      <!-- Produto 2 -->
-      <div class="col-md-3 col-sm-6">
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-3">
         <div class="card shadow-sm">
-          <img src="Imagens/redminote15.jpg" class="card-img-top" alt="Redmi Note 15">
-          <div class="card-body">
-            <h5 class="card-title">Redmi Note 15</h5>
-            <p class="fw-bold text-success">R$ 1.400,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produto 3 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm">
-          <img src="Imagens/iphone16.jpg" class="card-img-top" alt="Iphone 16">
-          <div class="card-body">
-            <h5 class="card-title">Iphone 16</h5>
-            <p class="fw-bold text-success">R$ 3.999,99</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produto 4 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm">
-          <img src="Imagens/iphone16promax.jpg" class="card-img-top" alt="Iphone 16 PRO MAX">
+          <img src="Imagens/iphone16promax.jpg" class="card-img-top" alt="Produto 2">
           <div class="card-body">
             <h5 class="card-title">Iphone 16 PRO MAX</h5>
-            <p class="fw-bold text-success">R$ 5.000,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
+            <p class="card-text">Feito pela aplle.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
       </div>
-
-      <!-- Produto 5 -->
-      <div class="col-md-3 col-sm-6">
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-3">
         <div class="card shadow-sm">
-          <img src="Imagens/s25.jpg" class="card-img-top" alt="S25 ULTRA">
+          <img src="Imagens/iphone16.jpg" class="card-img-top" alt="Produto 3">
           <div class="card-body">
-            <h5 class="card-title">S25 ULTRA</h5>
-            <p class="fw-bold text-success">R$ 5.000,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
+            <h5 class="card-title">Iphone 16</h5>
+            <p class="card-text">Feito pela aplle.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
           </div>
         </div>
       </div>
-
-      <!-- Produto 6 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm">
-          <img src="Imagens/rogphone8pro.jpg" class="card-img-top" alt="Rogphone 8 PRO">
-          <div class="card-body">
-            <h5 class="card-title">Rogphone 8 PRO</h5>
-            <p class="fw-bold text-success">R$ 4.300,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produto 7 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm">
-          <img src="Imagens/pixel8pro.jpg" class="card-img-top" alt="Google Pixel 8 PRO">
-          <div class="card-body">
-            <h5 class="card-title">Google Pixel 8 PRO</h5>
-            <p class="fw-bold text-success">R$ 3.800,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produto 8 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm">
-          <img src="Imagens/edge40.jpg" class="card-img-top" alt="Motoola EDGE 40">
-          <div class="card-body">
-            <h5 class="card-title">Motoola EDGE 40</h5>
-            <p class="fw-bold text-success">R$ 4.100,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produto 9 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm">
-          <img src="Imagens/oneplus12.jpg" class="card-img-top" alt="OnePlus 12">
-          <div class="card-body">
-            <h5 class="card-title">OnePlus 12</h5>
-            <p class="fw-bold text-success">R$ 3.500,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produto 10 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm">
-          <img src="Imagens/xperia1v.jpg" class="card-img-top" alt="Xperia 1V">
-          <div class="card-body">
-            <h5 class="card-title">Xperia 1V</h5>
-            <p class="fw-bold text-success">R$ 3.299,00</p>
-            <a href="#" class="btn btn-dark w-100">Comprar</a>
-          </div>
-        </div>
-      </div>
-
     </div>
 
-    <!-- Ver mais -->
+    <!-- Botão Ver Mais -->
     <div class="text-center mt-4">
-      <a href="catalogo.html" class="btn btn-outline-dark btn-lg">Ver mais produtos</a>
+      <a href="produtos.html" class="btn btn-dark btn-lg">Ver Mais</a>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white mt-4">
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white mt-auto">
     <div class="container py-4">
-      <p class="text-center mb-0">© 2025 SENAC - RJ | Todos os direitos reservados</p>
+      <div class="row">
+        <!-- Links rápidos -->
+        <div class="col-md-2 mb-3">
+          <p>Links Rápidos</p>
+          <nav class="nav flex-column">
+            <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
+            <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
+            <a class="nav-link text-white py-1" href="privacidade.html">Privacidade</a>
+            <a class="nav-link text-white py-1" href="termos.html">Termos e Condições</a>
+            <a class="nav-link text-white py-1" href="blog.html">Blog</a>
+          </nav>
+        </div>
+
+        <!-- Contatos -->
+        <div class="col-md-2">
+          <p>Contatos</p>
+          <p><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</p>
+          <p><i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contato@tenis.github.io" class="text-white">
+              contato@tenis.github.io
+            </a>
+          </p>
+          <p><a href="suporte.html" class="text-white">Acesse o suporte</a></p>
+        </div>
+
+        <!-- Espaço extra -->
+        <div class="col-md-3 ">
+
+            <p>Redes Sociais</p>
+            
+            <a href="http://facebook.com.br" target="_blank" 
+                class="text-white p-1"><i class="bi bi-facebook"></i></a>
+
+            <a href="http://instagram.com.br" target="_blank" 
+                class="text-white p-1"><i class="bi bi-twitter"></i></a>
+            
+            <a href="http://instagram.com.br" target="_blank" 
+                class="text-white p-1"><i class="bi bi-instagram"></i></a>
+            
+            <a href="http://instagram.com.br" target="_blank" 
+                class="text-white p-1"><i class="bi bi-linkedin"></i></a>
+            
+            <a href="http://instagram.com.br" target="_blank" 
+                class="text-white p-1"><i class="bi bi-github"></i></a>
+            
+            <a href="http://instagram.com.br" target="_blank" 
+                class="text-white p-1"><i class="bi bi-gitlab"></i></a>
+
+      </div>
+
+      <hr/>
+
+      <div class="row">
+        <div class="col-md-2 mb-3">
+          <select class="form-select form-select-sm text-white bg-dark">
+            <option selected>Portugues</option>
+            <option>English</option>
+            <option>French</option>
+            <option>Spanish</option>
+            <option>Russian</option>
+          </select>
+        </div>
+        <div class="col-md-1 mb-3">
+          <select class="form-select form-select-sm text-white bg-dark">
+            <option selected>Real</option>
+            <option>US Dollars</option>
+            <option>Euro</option>
+          </select>
+        </div>
+        <div class="col-md-9 mb-3">
+          <p class="text-end text-black-50 mb-0">
+            <a href="termos.html" class="text-white">Termos e condições</a> |
+            <a href="privacidade.html" class="text-white">Privacidade</a> |
+            <span class="text-white">© 2025 SENAC - RJ</span>
+          </p>
+        </div>
+      </div>
     </div>
   </footer>
+  
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
